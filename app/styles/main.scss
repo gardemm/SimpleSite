@@ -121,6 +121,10 @@ body {
 }
 .placeholder {
   margin-bottom: 20px;
+  -webkit-transition: width 0.7s;
+  -moz-transition: width 0.7s;
+  -o-transition: width 0.7s;
+  transition: width 0.7s;
 }
 .placeholder img {
   display: inline-block;
@@ -141,4 +145,14 @@ body {
   background-color: #777777;
   color: white;
   padding: 30px;
+}
+
+.top-contacts {
+  display: none;
+}
+
+@media (min-width: 990px) {
+  .top-contacts {
+    display: block;
+  }
 }
