@@ -1,6 +1,6 @@
 ### What is this repository for? ###
 
-For demonstrate bootstrap adaptive page-proofs from [maket](http://image.prntscr.com/image/4ff297d29277402e9c8da1f9819850ca.png)
+For demonstrate how to building Single Page Applications using the [AngularJs framework](https://angularjs.org/)
 
 To build app I am using:
 * Yoman [gulp-sass](https://github.com/yeoman/generator-webapp) generator
@@ -23,6 +23,6 @@ To build app I am using:
 
 ### Owner ###
 
-[Gardem](https://github.com/gardemm)
+**Profile:** [Gardem](https://github.com/gardemm)
 
 **Email:** dmitryarchebasov@gmail.com
