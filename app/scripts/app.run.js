@@ -5,10 +5,10 @@
         .module('SSite')
         .run(runBlock);
 
-    function runBlock($log, $rootScope, mdResize, User) {
+    function runBlock($log, $rootScope) {
         $rootScope.$on('$stateChangeStart', 
 			function(event, toState, toParams, fromState, fromParams, options) {
-				User.init();
+				// init user
 			});
     }
 
