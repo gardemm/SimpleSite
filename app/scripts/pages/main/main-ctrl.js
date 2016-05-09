@@ -6,7 +6,7 @@
 		.controller('MainCtrl', MainCtrl);
 
 	function MainCtrl($rootScope) {
-		// todo
+		console.log('main overview page');
 		$rootScope.page = 'main';
 	}
 
