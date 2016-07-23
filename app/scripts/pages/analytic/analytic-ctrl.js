@@ -1,13 +1,12 @@
 (function() {
-	'use strict';
+  'use strict';
 
-	angular
-		.module('SSite')
-		.controller('AnalyticCtrl', AnalyticCtrl);
+  angular
+	.module('SSite')
+	.controller('AnalyticCtrl', AnalyticCtrl);
 
-	function AnalyticCtrl($rootScope) {
-		console.log('AnalyticCtrl');
-		$rootScope.page = 'analytic';
-	}
+  function AnalyticCtrl($rootScope, $scope) {
+	$rootScope.page = 'analytic';
+  }
 
 }());

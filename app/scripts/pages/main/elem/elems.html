@@ -1,0 +1,6 @@
+<div ng-repeat="row in elemets">
+	<div class="row placeholders">
+		<elem ng-repeat="elm in elements" class="col-xs-6 col-sm-3"></elem>
+	</div>
+	<br ng-if="row.$index % 4 == 0">
+</div>
