@@ -5,11 +5,16 @@
 	.module('SSite')
 	.directive('elem', function () {
 	  return {
-		restrict: "E",
-		templateUrl: 'scripts/pages/main/elem/elem.html',
-		controller: function () {
-		  console.log('dir ctrl');
-		}
+			restrict: "E",
+			scope: {
+				img: '=',
+				title: '=',
+				description: '=',
+			},
+			templateUrl: 'scripts/pages/main/elem/elem.html',
+			controller: function () {
+				
+			}
 	  }
 	});
 	
