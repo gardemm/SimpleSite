@@ -1,8 +1,29 @@
 <div>
     <h1 class="page-header">Using <strong>chart.js</strong> with Angular</h1>
 
-    <canvas id="line" class="chart chart-line" chart-data="data"
-    chart-labels="labels" chart-series="series" chart-options="options"
-    chart-dataset-override="datasetOverride" chart-click="onClick">
+    <h2>Graph examples </h2>
+
+    <h3>Line</h3>
+    
+    <canvas id="line" class="chart chart-line" chart-data="chart.line.data"
+    chart-labels="chart.line.labels" chart-series="chart.line.series" chart-options="chart.line.options"
+    chart-dataset-override="chart.line.datasetOverride">
     </canvas> 
+    
+    <br>
+    
+    <h3>Bar</h3>
+
+    <canvas id="bar" class="chart chart-bar"
+    chart-data="chart.bar.data" chart-labels="chart.bar.labels" chart-series="chart.bar.series">
+    </canvas>
+
+    <br>
+
+    <h3>Doughnut</h3>
+
+    <canvas id="doughnut" class="chart chart-doughnut"
+      chart-data="chart.doughnut.data" chart-labels="chart.doughnut.labels">
+    </canvas> 
+
 </div>
