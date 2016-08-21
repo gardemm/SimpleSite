@@ -53,12 +53,16 @@ gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
 
 gulp.task('html', ['styles', 'scripts'], () => {
   return gulp.src('app/**/*.html')
-    .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
+    //.pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
     //.pipe($.if('*.js', $.uglify()))
-    .pipe($.if('*.css', $.cssnano()))
-    .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
+    //.pipe($.if('*.css', $.cssnano()))
+    //.pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
     .pipe(gulp.dest('dist'));
 });
+
+gulp.task('html-copy', () => {
+  return gulp.src('app/')
+})
 
 gulp.task('images', () => {
   return gulp.src('app/images/**/*')
@@ -97,7 +101,8 @@ gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
     server: {
       baseDir: ['.tmp', 'app'],
       routes: {
-        '/bower_components': 'bower_components'
+        '/bower_components': 'bower_components',
+        '/node_modules': 'node_modules'
       }
     }
   });

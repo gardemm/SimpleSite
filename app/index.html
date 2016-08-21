@@ -62,7 +62,7 @@
             <li class=" {{ page == 'main' ? 'active' : ''; }} "><a ui-sref="main">Overview <span class="sr-only">(current)</span></a></li>
             <li class=" {{ page == 'report' ? 'active' : ''; }} "><a ui-sref="report">Reports</a></li>
             <li class=" {{ page == 'analytic' ? 'active' : ''; }} "><a ui-sref="analytic">Analytics</a></li>
-            <li class="disabled"><a href="export">Export</a></li>
+            <li class=" {{ page == 'export' ? 'active' : ''; }} "><a ui-sref="export">Export</a></li>
           </ul>
           <ul class="nav nav-sidebar">
             <li class="disabled"><a href="">Nav item</a></li>
@@ -117,6 +117,10 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    
+    <script src="/bower_components/d3/d3.min.js"></script>
+    <script src="/node_modules/chart.js/dist/Chart.min.js"></script>
+    <script src="/node_modules/angular-chart.js/dist/angular-chart.js"></script>
     <!-- endbuild -->
     
     <!-- build:js scripts/app.js -->
@@ -128,6 +132,7 @@
     <script src="scripts/pages/main/main-ctrl.js"></script>
     <script src="scripts/pages/report/report-ctrl.js"></script>
     <script src="scripts/pages/analytic/analytic-ctrl.js"></script>
+    <script src="scripts/pages/export/export-ctrl.js"></script>
 
     <script src="scripts/directive/focus.js"></script>
     <script src="scripts/directive/enter-submit.js"></script>

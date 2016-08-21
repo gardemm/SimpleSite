@@ -26,6 +26,12 @@
                 controller: 'AnalyticCtrl',
                 controllerAs: 'analytic'
             })
+            .state('export', {
+                url: '/export',
+                templateUrl: '/scripts/pages/export/export.html',
+                controller: 'ExportCtrl',
+                controllerAs: 'export'
+            })
 
         $urlRouterProvider.otherwise('/');
     }

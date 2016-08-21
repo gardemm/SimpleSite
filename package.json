@@ -39,5 +39,8 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "angular-chart.js": "^1.0.2"
   }
 }

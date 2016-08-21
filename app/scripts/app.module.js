@@ -9,7 +9,8 @@
 		'ngSanitize', 
 		'ngMessages', 
 		'ngAria', 
-		'ui.router'
+		'ui.router',
+		'chart.js'
 	]);
 
 }());
